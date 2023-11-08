@@ -5,7 +5,7 @@ services:
     container_name: qrcode
     image: bizzycolah/qrcode-generator
     ports:
-      - 8895:80
+      - 80:80
     healthcheck:
       test: curl -f http://localhost:80/ || exit 1
     mem_limit: 1g
